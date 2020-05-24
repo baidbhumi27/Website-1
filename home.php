@@ -128,7 +128,7 @@ form.example::after {
 			<span class="navbar-toggler-icon my-toggler"></span>
 		</button>
 		<div class=" collapse navbar-collapse" id="ids">
-		<ul class="navbar-nav mx-auto ul">
+		<ul class="nav navbar-nav">
 		<li class="nav-item">
 			<a href="#" class="nav-link">Home</a>
 		</li>
