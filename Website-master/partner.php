@@ -19,26 +19,37 @@
         <link type="text/css" rel="stylesheet" href="css/style.css">
         <title>Website</title>
 <style type="text/css">
-    
-    .layout{
-    border: 2px solid black;
-         text-align: center;
-    height: 800px;
-}
-.content{
-/*    border: 2px solid black;*/
-    display: inline-block;
-    margin-top: 300px;
-}
-.col-sm-3{
-    text-align: center;
-    border: 2px solid pink;
+    .submit{
+        background-color: #fdd54f;
+        
+    }
+    .form-control{
+            border: none;
+    border-bottom: 2px solid black;
+    border-radius: unset;
+    }
+    .row div p{
+    background-color: white;
     height: 200px;
-    margin: 0 auto;
-}
-
-    
-    .input-group-prepend span{
+    }
+    #form{
+         background-color: white;
+        height: 416px;
+        padding: 35px;
+    }
+    .background_gradient{
+        background-image: linear-gradient(to right, #fdd54f, #f8049c);
+        height: 1500px;
+        padding-top:40px; 
+    }
+    .subheader{
+        margin: 0 auto; 
+        border: 1px solid white;
+        background-color: white;
+        height: 400px;
+        width: 82%;
+    }
+        .input-group-prepend span{
         border-radius: 10px;
     border-top-right-radius: initial;
     border-bottom-right-radius: initial;
@@ -95,9 +106,7 @@
 		border-radius: 1rem;
 		font-weight: bold;
 	}
-
-
-</style>
+    </style>
     </head>
     <body>
         <navbar class="navbar navbar-expand-sm navbar-light bg-light">
@@ -115,7 +124,7 @@
 			<a href="#" class="nav-link">Categories</a>
 		</li>
 		<li class="nav-item">
-			<a href="partner.php" class="nav-link">Partner</a>
+			<a href="#" class="nav-link">Partner</a>
 		</li>	
 		<li class="nav-item">
 			<a  type="button" data-toggle="modal" data-target="#myModal" class="nav-link sign-in">Sign In/Up</a>
@@ -124,9 +133,7 @@
 		</div>
 		</div>
 	</navbar>
-        
-     
-<div class="container">
+   <div class="container">
 
   <!-- The Modal -->
   <div class="modal" id="myModal">
@@ -175,30 +182,69 @@
     </div>
   </div>
   
-</div>
+</div>     
+        
+        
+<div class="background_gradient">
+   <div class="subheader">
+  <div class="container text-center">
+    <h1>Add a Subheading</h1>      
 
-<!--        -->
-        <div class="layout">
-<div class="container content">
+  </div>
+</div>
+  <div class="container text-center">    
+  
+  <br>
   <div class="row">
-
-<div class="col-sm-3">
-    <div class="logo">
-       <h1><a href="home.php">Logo</a></h1> 
+    <div class="col-sm-4">
+      
+      <div class="well">
+      <div><p>Submit your details to join us in the initiative. We will get back to you within 24 hours.</p></div> 
+      </div>
+      <div class="well">
+       <div> <p>Some text..</p></div> 
+      </div>    
     </div>
-    <form>
-        <div class="input-group">
-            <input type="text" class="form-control" name="search" placeholder="Search...">
-            <span class="input-group-text"><i class='fas fa-search'></i></span>
+    
+    <div class="col-sm-8">
+      
+      <div id="form">
+          <form class="form" action="/action_page.php">
+  <div class="form-group col-sm-6 float-left">
+    <label class="float-left" for="name">Name:</label>
+    <input type="name" class="form-control" id="name" name="name" required>
+  </div>
+  <div class="form-group col-sm-6 float-right">
+    <label class="float-left" for="email">Email:</label>
+    <input type="email" class="form-control" id="email" name="email" required>
+  </div>
+   <div class="form-group col-sm-6 float-left">
+    <label class="float-left" for="phone">Phone Number:</label>
+    <input type="number" class="form-control" id="phone" name="phone" required>
+  </div>
+  <div class="form-group col-sm-6 float-right">
+    <label class="float-left" for="org">Organisation:</label>
+    <input type="text" class="form-control" id="org" name="org" required>
+  </div>           
+  <div class="form-group col-sm-12 float-left">
+      <label class="float-left" for="msg">Message</label>
+      <textarea type="msg" class="form-control" id="msg" name="msg"></textarea>
+  </div><br>
+              <br>
+  <button type="submit" class="btn btn-default submit">Submit</button>
+</form>
+        
+        
         </div>
-    </form>
-
-    </div>
+    </div>  
+  </div>
+  <hr>
 </div>
-        </div>
-        </div>
-<!---->
- 
-                <script src="app.js"></script>
+           
+</div>
+
+        
+         
+        <script src="app.js"></script>
     </body>
 </html>
