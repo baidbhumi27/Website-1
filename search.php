@@ -10,36 +10,32 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style type="text/css">
-	body{
+body{
 		background-image: linear-gradient(to right, yellow, magenta);
-	}
-	.ul{
+}
+.ul{
 		text-align: center;
-	}
-	.nav-link:link{
+}
+.nav-link:link{
 		margin-left: 20px;
 		margin-right: 20px;
 		color: black;
 		opacity: 1;
-	}
-	.navbar-brand{
+}
+.navbar-brand{
 		color: black;
 		font-weight: bold;
-	}
-
-	.nav-link:hover,.navbar-brand:hover{
+}
+.nav-link:hover,.navbar-brand:hover{
 		color: black;
-	}
-	.navbar-toggler-icon{
-		/*border: 1px solid black;*/
-	}
-	.sign-in{
+}
+.sign-in{
 		background-image: linear-gradient(to right, yellow, magenta);
 		border-radius: 1rem;
 		font-weight: bold;
-	}
+}
 
-	.mycontainer {
+.mycontainer {
 		display: flex;
 		flex-direction: column;
 		justify-content: space-around;
@@ -50,61 +46,51 @@
 		border-radius: 25px;
 		height: 200px;
 		background-color: white;
-	}
-		.buttons, .filters, .search {
+}
+.buttons, .filters, .search {
 		display: flex;
 		justify-content: center;
-	}
-	.buttons{
+}
+.buttons{
 		align-self:  center;
 		margin-top: -2rem;
-		/*flex-basis: 4rem;*/
-		/*justify-content: space-between;*/
-		/*border: 1px solid black;*/
 		width: 20%;
-	}
-	.buttons button{
+}
+.buttons button{
 		background-color: #f0f0f0;
 		margin-right: 1rem;
-	}
+}
 
-	.filters{
+.filters{
 		align-self: center;
 		width: 40%;
-	}
-	.filters .button3{
+}
+.filters .button3{
 		margin-right: 1rem;
 		display: flex;
 		justify-content: space-between;
 		border: 1px solid black;
 		border-radius: 1rem;
 		background-color: orange;
-	}
-	.button3:hover{
+}
+.button3:hover{
 		background-color: magenta;
-	}
-
-
-	.search{
+}
+.search{
 		width: 80%;
-	}
-	.search form {
+}
+.search form {
 		width:  100%;
 		display: flex;
 		justify-content: center;
 
-	}
-	.button2{
+}
+.button2{
 		justify-content: space-between;
 		box-sizing: border-box;
-		/*border: 1px solid black;*/
 		padding-left: 1rem;
 		padding-right: 1rem;
 		background-color: #f0f0f0;
-	}
-
-.fa{
-	border-radius: 25px;
 }
 input[type=text] {
   border: none;
@@ -113,20 +99,38 @@ input[type=text] {
   border-radius: 25px;
   background: #ddd;
 }
-.container-fluid{
-	border: 1px solid black;
+.myrow{
+	background-color: grey;
+}
+.mycontainer1 {
+            background: white;
+        }
+
+.myflex-logo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+}
+.myflex-content {
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+            display: flex;
+            flex-direction: column;
 }
 
-.row1{
-	width: 100%;
-}
-.mycontainerfluid{
-	display: flex;
-}
-.company_single{
-	display: flex;
+.myflex-social {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
 }
 
+ .myflex-social-logo {
+            margin-top: 0.75rem;
+            width: 80%;
+            display: flex;
+            justify-content: space-around;
+}
 </style>
 <body>
 	<navbar class="navbar navbar-expand-sm navbar-light bg-light">
@@ -174,12 +178,13 @@ input[type=text] {
 		    <button type="button" class="btn btn-default button3">Service</button>
 		</div>	
 	</div>
-<!-- <div class="container-fluid mycontainerfluid">
-   <div class="col-md-8">
-   	<div class="col-md-12 company_single">
-   		 <?php
+	<br>
+	<br>
+
+  <div class="container mycontainer1">
+    	<?php
 		require('connection.php');
-    session_start();
+    // session_start();
     $sql="SELECT * FROM companies";
         $result = mysqli_query($connection, $sql);
 
@@ -189,31 +194,35 @@ input[type=text] {
                 {
                     
                     echo '
-   							<div class="col-md-4">'.$row["name"].'</div>
-   							<div class="col-md-8">
-   								<h5>'.$row["name"].'</h5>
-                                <h5>'.$row["industry"].'</h5>
-                                <h5>'.$row["products"].'</h5>
-                                <h5>'.$row["location"].'</h5>
-   							</div>';
+            <div class="row myrow">
+                    	<div class="col-8">
+                    	<div class="row">
+                    		<div class="col-4 text-center myflex-logo">
+  								<img src="data:image;base64,'.base64_encode($row["logo"]).'" alt="John Doe" class="rounded-circle" style="width:150px; height:150px">
+  							</div>
+  							<div class="col-8 myflex-content">
+    							<p>'.$row["name"].'</p>
+    							<p>'.$row["industry"].'</p>
+    							<p>'.$row["products"].'</p>
+    							<p>'.$row["locations"].'</p>
+  							</div>
+  						</div>
+  						</div>
+  				<div class="col-md-4 myflex-social">
+                		<div class="h2">Social Media Handles</div>
+                	<div class="myflex-social-logo">
+                    	<i class="fa fa-instagram fa-2x"></i>
+                    	<i class="fa fa-twitter fa-2x"></i>
+                    	<i class="fa fa-facebook fa-2x"></i>
+                    	<i class="fa fa-google-plus fa-2x"></i>
+                	</div>
+            	</div>
+        	</div>		
+
+   						';
    				}
    			}
-   				?>
-   	</div>
-   </div>
-    <div class="col-md-4">
-      <div class="content-section">
-        <h3>Our Sidebar</h3>
-        <p class='text-muted'>You can put any information here you'd like.
-          <ul class="list-group">
-            <li class="list-group-item list-group-item-light">Latest Posts</li>
-            <li class="list-group-item list-group-item-light">Announcements</li>
-            <li class="list-group-item list-group-item-light">Calendars</li>
-            <li class="list-group-item list-group-item-light">etc</li>
-          </ul>
-        </p>
-      </div>
-    </div>
-  </div>
-</body> -->
+   		?>
+</div>
+</body> 
 </html>
