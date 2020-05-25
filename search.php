@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -115,13 +116,14 @@ input[type=text] {
 .container-fluid{
 	border: 1px solid black;
 }
-div{
-	border: 1px solid black;
-}
+
 .row1{
 	width: 100%;
 }
 .mycontainerfluid{
+	display: flex;
+}
+.company_single{
 	display: flex;
 }
 
@@ -154,7 +156,7 @@ div{
 	<div class="row mycontainer">
 		<div class="buttons">
 			<button type="button" class="btn btn-default button2">All</button>
-		    <button class="btn btn-default dropdown-toggle button2" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+		    <button class="btn btn-default dropdown-toggle button2" type="button" id="	" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
     		Location
   			</button>
 		    <button type="button" class="btn btn-default button2">Industry</button>
@@ -172,17 +174,33 @@ div{
 		    <button type="button" class="btn btn-default button3">Service</button>
 		</div>	
 	</div>
-<div class="container-fluid mycontainerfluid">
-    <div class="col-md-8">
-    
-    	<div class="col-md-12">
-    			<h1>hi</h1>
-    	<h1>hi</h1>
-    	<h1>hi</h1>
-    	<h1>hi</h1>
-    	<h1>hi</h1>
-    	</div>
-    </div>
+<!-- <div class="container-fluid mycontainerfluid">
+   <div class="col-md-8">
+   	<div class="col-md-12 company_single">
+   		 <?php
+		require('connection.php');
+    session_start();
+    $sql="SELECT * FROM companies";
+        $result = mysqli_query($connection, $sql);
+
+            if(mysqli_num_rows($result) > 0)
+            {
+                while($row = mysqli_fetch_array($result))
+                {
+                    
+                    echo '
+   							<div class="col-md-4">'.$row["name"].'</div>
+   							<div class="col-md-8">
+   								<h5>'.$row["name"].'</h5>
+                                <h5>'.$row["industry"].'</h5>
+                                <h5>'.$row["products"].'</h5>
+                                <h5>'.$row["location"].'</h5>
+   							</div>';
+   				}
+   			}
+   				?>
+   	</div>
+   </div>
     <div class="col-md-4">
       <div class="content-section">
         <h3>Our Sidebar</h3>
@@ -197,6 +215,5 @@ div{
       </div>
     </div>
   </div>
-
-</body>
+</body> -->
 </html>
