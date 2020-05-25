@@ -59,6 +59,13 @@ body{
 .buttons button{
 		background-color: #f0f0f0;
 		margin-right: 1rem;
+		box-shadow: 0.2rem 0.2rem;
+}
+.filters .button3{
+	box-shadow: 0.1rem 0.1rem;
+}
+.buttons button:active{
+	border-color: 1px solid black;
 }
 
 .filters{
@@ -75,6 +82,9 @@ body{
 }
 .button3:hover{
 		background-color: magenta;
+}
+p{
+	font-weight: bold;
 }
 .search{
 		width: 80%;
@@ -99,23 +109,35 @@ input[type=text] {
   border-radius: 25px;
   background: #ddd;
 }
-.myrow{
-	background-color: grey;
-}
 .mycontainer1 {
-            background: white;
+            background: #e8e8e8;
+            border-radius: 25px;
+            width: 90%;	
+            padding: 1rem;
         }
+.myrow{
+	background-color: white;
+	border-radius: 25px;
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+	width: 98%;
+	margin-left: 1%;
+	margin-right: 1%;
+}
+
 
 .myflex-logo {
             display: flex;
             justify-content: center;
             align-items: center;
+            padding-left: 3.5rem;
 }
 .myflex-content {
             margin-top: 1rem;
             margin-bottom: 1rem;
             display: flex;
             flex-direction: column;
+            padding-left: 4rem;
 }
 
 .myflex-social {
@@ -123,6 +145,7 @@ input[type=text] {
             flex-direction: column;
             align-items: center;
             justify-content: center;
+            padding-bottom: 1rem;
 }
 
  .myflex-social-logo {
@@ -159,8 +182,8 @@ input[type=text] {
 	</navbar>
 	<div class="row mycontainer">
 		<div class="buttons">
-			<button type="button" class="btn btn-default button2">All</button>
-		    <button class="btn btn-default dropdown-toggle button2" type="button" id="	" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+			<button type="button" class="btn btn-default button2" >All</button>
+		    <button class="btn btn-default dropdown-toggle button2" type="button" id="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
     		Location
   			</button>
 		    <button type="button" class="btn btn-default button2">Industry</button>
@@ -181,7 +204,7 @@ input[type=text] {
 	<br>
 	<br>
 
-  <div class="container mycontainer1">
+  <div class="container-fluid mycontainer1">
     	<?php
 		require('connection.php');
     // session_start();
@@ -218,6 +241,30 @@ input[type=text] {
                 	</div>
             	</div>
         	</div>		
+        	  <div class="row myrow">
+                    	<div class="col-8">
+                    	<div class="row">
+                    		<div class="col-4 text-center myflex-logo">
+  								<img src="data:image;base64,'.base64_encode($row["logo"]).'" alt="John Doe" class="rounded-circle" style="width:150px; height:150px">
+  							</div>
+  							<div class="col-8 myflex-content">
+    							<p>'.$row["name"].'</p>
+    							<p>'.$row["industry"].'</p>
+    							<p>'.$row["products"].'</p>
+    							<p>'.$row["locations"].'</p>
+  							</div>
+  						</div>
+  						</div>
+  				<div class="col-md-4 myflex-social">
+                		<div class="h2">Social Media Handles</div>
+                	<div class="myflex-social-logo">
+                    	<i class="fa fa-instagram fa-2x"></i>
+                    	<i class="fa fa-twitter fa-2x"></i>
+                    	<i class="fa fa-facebook fa-2x"></i>
+                    	<i class="fa fa-google-plus fa-2x"></i>
+                	</div>
+            	</div>
+        	</div>	
 
    						';
    				}
