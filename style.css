@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 .layout{
     border: 2px solid black;
@@ -19,3 +20,54 @@
 }
 
 
+=======
+.navbar-inverse{
+    background-color: #ffffff;
+    border-color: #ffffff;
+}
+
+#myNavbar ul li{
+    font-size: 20px;
+    color: #9d9d9d;
+}
+#myNavbar ul li:hover{
+    background-color: #FF00FF;
+}
+#myNavbar ul li .list:hover,active,visited{
+    color: #9d9d9d;
+}
+
+.navbar-header .navbar-brand:hover{
+    font-size: 25px;
+    color: #9d9d9d;
+}
+
+.modal-header{
+    background-color: #FF00FF;
+}
+
+#forgot{
+    float: right;
+}
+.layout{
+    border: 2px solid black;
+    height: 800px;
+}
+.container{
+    text-align: center;
+}
+.col-sm-3{
+    display: inline-block;
+    text-align: center;
+    border: 2px solid pink;
+    float: none;
+    width: 400px;
+    height: 200px;
+    margin-top: 300px;
+}
+
+
+form{
+    padding: 50px 10px 10px 10px;
+}
+>>>>>>> upstream/master
