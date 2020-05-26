@@ -14,10 +14,8 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
   <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-        
-
-        <link type="text/css" rel="stylesheet" href="style_partner.css">
-        <title>Website</title>
+  <link type="text/css" rel="stylesheet" href="style_partner.css">
+  <title>Website</title>
 
     </head>
     <body>
@@ -33,8 +31,30 @@
 		<li class="nav-item">
 			<a href="#" class="nav-link">Home</a>
 		</li>
-		<li class="nav-item">
-			<a href="#" class="nav-link">Categories</a>
+		<li class="nav-item dropdown">
+			<a href="#" type="button" class="nav-link dropbtn">Categories</a>
+            <div class="dropdown-content"> 
+      <div class="row">
+        <div class="col-sm-4">
+          <h3>Category 1</h3>
+          <a href="#">Link 1</a>
+          <a href="#">Link 2</a>
+          <a href="#">Link 3</a>
+        </div>
+        <div class="col-sm-4">
+          <h3>Category 2</h3>
+          <a href="#">Link 1</a>
+          <a href="#">Link 2</a>
+          <a href="#">Link 3</a>
+        </div>
+        <div class="col-sm-4">
+          <h3>Category 3</h3>
+          <a href="#">Link 1</a>
+          <a href="#">Link 2</a>
+          <a href="#">Link 3</a>
+        </div>
+      </div>
+            </div>
 		</li>
 		<li class="nav-item">
 			<a href="#" class="nav-link">Partner</a>
@@ -249,7 +269,7 @@
             <p><a href="#">Chennai</a></p>
             <p><a href="#">Ahemdabad</a></p>
         </div>
-        <div class="col-sm-4">
+        <div class="col-sm-3">
             <p class="header">Connect with us</p>
             <p><a href="#">Instagram </a></p>
             <p><a href="#">Facebook </a></p>
