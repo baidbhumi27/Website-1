@@ -1,0 +1,137 @@
+/*----FOOTER STYLED-----*/
+    .conditions p a{
+        color: grey;
+        text-decoration: none;
+        margin: 5px;
+    }
+    .footer .row div p a{
+        color: grey;
+        font-size: 15px;
+    }
+    .footer .row div p{
+        line-height: 15px;
+    }
+    .footer .row div{
+        padding: 15px;
+    }
+    .footer {
+        padding: 20px;
+        text-align: center;
+        background: black;
+        color: white;
+}
+/*----------ALL DIV ELEMENTS------------*/
+    div{
+        border-radius:15px;
+    }
+/*----ADVERTISE & LIST YOUR BUSINESS STYLING ----*/
+    .getInTouch{
+     border-radius: 25px;
+        font-weight: bolder;
+        
+    }
+    h2{
+        color: #f8049c;
+        font-weight: bold;
+    }
+/*-------FORM styling-------*/
+    .submit{
+        background-color: #fdd54f;
+        
+    }
+   
+    #form .form-control{
+    border: none;
+    border-bottom: 2px solid black;
+    border-radius: unset;
+    }
+  
+    #form{
+         background-color: white;
+         padding: 10px;
+        
+    }
+/*------WELL STYLING-----*/
+   .well{
+    background-color: white;
+    padding: 20px;
+        text-align: left;
+        font-size: 18px;
+/*        height: 150px;*/
+    }
+/*--SUBheader---*/
+    .subheader{
+        margin: 0 auto; 
+        border: 1px solid white;
+        background-color: white;
+/*        height: 400px;*/
+        width: 82%;
+    }
+/*-----------BACKground gradient ----------*/
+    .background_gradient{
+        background-image: linear-gradient(to right, #fdd54f, #f8049c);
+        width: 100%;
+        padding-top:40px; 
+    }
+/*--------------close BG---------------*/
+/*---------Styling MODAL---------------------*/
+        .input-group-prepend span{
+        border-radius: 10px;
+    border-top-right-radius: initial;
+    border-bottom-right-radius: initial;
+    }
+    .input-group input{
+            border-radius: 10px;
+    border-top-left-radius: initial;
+    border-bottom-left-radius: initial;
+    }
+    
+    .modal-content{
+        border-radius: 10px;
+    }
+    
+    .modal-header{
+        background-image: linear-gradient(to right, #fdd54f, #f8049c);
+            border-radius: 10px;
+    border-bottom-left-radius: initial;
+    border-bottom-right-radius: initial;
+    }
+    
+    #submit{
+        background-color: #fdd54f;
+        border-radius: 10px;
+    }
+/*---------Close---------------------*/
+
+
+/*---------------------Styling NAVBAR---------------------*/
+
+	.nav-link:link{
+		margin-left: 20px;
+		margin-right: 20px;
+		color: black;
+		opacity: 1;
+        
+	}
+    .nav-link:hover{
+        background-color: #fdd54f;
+        border-radius: 10px;
+    }
+	.navbar-brand{
+		color: black;
+		font-weight: bold;
+	}
+
+	.nav-link:hover,.navbar-brand:hover{
+		color: black;
+	}
+	.navbar-toggler-icon{
+		/*border: 1px solid black;*/
+	}
+	.sign-in{
+		background-image: linear-gradient(to right, #fdd54f, #f8049c);
+		border-radius: 1rem;
+		font-weight: bold;
+	}
+
+/*------------------------Close-------------------------*/
