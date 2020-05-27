@@ -2,13 +2,14 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>SEARCH</title>
 </head>
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">	
 <script src="https://code.jquery.com/jquery-2.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
 <style type="text/css">
 body{
 		background-image: linear-gradient(to right, yellow, magenta);
@@ -59,10 +60,10 @@ body{
 .buttons button{
 		background-color: #f0f0f0;
 		margin-right: 1rem;
-		box-shadow: 0.2rem 0.2rem;
-}
+		box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2);
+    }
 .filters .button3{
-	box-shadow: 0.1rem 0.1rem;
+/*	box-shadow: 0.1rem 0.1rem;*/
 }
 .buttons button:active{
 	border-color: 1px solid black;
@@ -76,12 +77,12 @@ body{
 		margin-right: 1rem;
 		display: flex;
 		justify-content: space-between;
-		border: 1px solid black;
-		border-radius: 1rem;
-		background-color: orange;
 }
 .button3:hover{
-		background-color: magenta;
+		border: 3px solid orange;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
 }
 p{
 	font-weight: bold;
@@ -109,51 +110,79 @@ input[type=text] {
   border-radius: 25px;
   background: #ddd;
 }
-.mycontainer1 {
-            background: #e8e8e8;
+
+/*
+    .myflex-logo {
+        display: table-cell; 
+    }    
+*/
+/*
+.avatar {
+  vertical-align: middle;
+    text-align: center;
+  width: 100px;
+    max-width: 100%;
+    height: auto;
+    border: 3px solid black;
+}    
+*/
+    .avatar{
+        
+   top: 50%;
+   left: 50%;
+   width: 200px;
+   height: 150px;
+/*
+   margin-top: -75px; 
+   margin-left: -100px;
+*/
+        margin-top: 9px;
+    margin-left: 5px;
+        max-width: 100%;
+        border: 3px solid black;
+    }
+
+    .col-sm-4{
+        
+        padding: 15px;
+    }
+
+    .myflex-content ul{
+            line-height: 20px;
+    list-style: none;
+    font-size: 15px;
+    }
+    .myrow{
+        width: 99%;
+        background-color: #fff;
+        border-radius: 15px;
+        border: 2px solid black;
+        margin: auto;
+        margin-top: 15px;
+/*        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);*/
+    }
+    .myrow:hover {
+        background-color: #ffda9b;
+        box-shadow: 8px 4px 8px 4px rgba(0, 0, 0, 0.2);
+    }
+    .mycontainer1{
+            background-color: #f2f2f2;
             border-radius: 25px;
-            width: 90%;	
+            width: 75%;	
             padding: 1rem;
-        }
-.myrow{
-	background-color: white;
-	border-radius: 25px;
-	margin-top: 1rem;
-	margin-bottom: 1rem;
-	width: 98%;
-	margin-left: 1%;
-	margin-right: 1%;
-}
+            
+    }
+    @media screen and (max-width:1200px) {
+  .row div {
+    width:100%; /* The width is 100%, when the viewport is 800px or smaller */
+  }
+    }
+    
+    .row .search form {
+        width: 50%;
+    }
 
-
-.myflex-logo {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding-left: 3.5rem;
-}
-.myflex-content {
-            margin-top: 1rem;
-            margin-bottom: 1rem;
-            display: flex;
-            flex-direction: column;
-            padding-left: 4rem;
-}
-
-.myflex-social {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            padding-bottom: 1rem;
-}
-
- .myflex-social-logo {
-            margin-top: 0.75rem;
-            width: 80%;
-            display: flex;
-            justify-content: space-around;
-}
+    
 </style>
 <body>
 	<navbar class="navbar navbar-expand-sm navbar-light bg-light">
@@ -189,13 +218,15 @@ input[type=text] {
 		    <button type="button" class="btn btn-default button2">Industry</button>
 		</div>
 		<div class="search">
-		<form action="action_page.php">
-	      <input type="text" placeholder="&nbsp Search.." name="search">
-	      <button type="submit" class="button1"><i class="fa fa-search"></i></button>
-    	</form>
+		<form>
+        <div class="input-group">
+            <input type="text" class="form-control" name="search" placeholder="Search..."><button>
+            <span class="input-group-text"><i class='fas fa-search'></i></span></button>
+        </div>
+    </form>
 		</div>
 		<div class="filters">
-			<button type="button" class="btn btn-default">Filters</button>
+			<button type="button" class="btn btn-default"><b>Filters</b></button>
 		    <button type="button" class="btn btn-default button3">Company</button>
 		    <button type="button" class="btn btn-default button3">Product</button>
 		    <button type="button" class="btn btn-default button3">Service</button>
@@ -210,63 +241,40 @@ input[type=text] {
     // session_start();
     $sql="SELECT * FROM companies";
         $result = mysqli_query($connection, $sql);
-
+        
             if(mysqli_num_rows($result) > 0)
             {
                 while($row = mysqli_fetch_array($result))
                 {
                     
                     echo '
-            <div class="row myrow">
-                    	<div class="col-8">
-                    	<div class="row">
-                    		<div class="col-4 text-center myflex-logo">
-  								<img src="data:image;base64,'.base64_encode($row["logo"]).'" alt="John Doe" class="rounded-circle" style="width:150px; height:150px">
+          <div class="row myrow">
+
+                    		<div class="col-sm-4 text-center myflex-logo">
+  								<img src="images/cr.png" alt="John Doe" class="avatar">
   							</div>
-  							<div class="col-8 myflex-content">
-    							<p>'.$row["name"].'</p>
-    							<p>'.$row["industry"].'</p>
-    							<p>'.$row["products"].'</p>
-    							<p>'.$row["locations"].'</p>
+  							<div class="col-sm-4 myflex-content">
+                            <ul>
+    							<li><h5>'.$row["name"].'</h5></li>
+    							<li><span><i class="fas fa-industry"></i>&nbsp;</span>'.$row["industry"].'</li>
+    							<li><span><i class="fas fa-handshake"></i>&nbsp;</span>'.$row["products"].'</li>
+                                <li><span><i class="fas fa-globe"></i>&nbsp;</span>'.$row["products"].'</li>
+    							<li><span><i class="fas fa-map-marker-alt"></i>&nbsp;</span>'.$row["locations"].'</li>
   							</div>
-  						</div>
-  						</div>
-  				<div class="col-md-4 myflex-social">
-                		<div class="h2">Social Media Handles</div>
+  						
+  				<div class="col-sm-4 myflex-social">
+                		<h4>Follow Us on -> </h4>
                 	<div class="myflex-social-logo">
-                    	<i class="fa fa-instagram fa-2x"></i>
-                    	<i class="fa fa-twitter fa-2x"></i>
-                    	<i class="fa fa-facebook fa-2x"></i>
-                    	<i class="fa fa-google-plus fa-2x"></i>
-                	</div>
-            	</div>
-        	</div>		
-        	  <div class="row myrow">
-                    	<div class="col-8">
-                    	<div class="row">
-                    		<div class="col-4 text-center myflex-logo">
-  								<img src="data:image;base64,'.base64_encode($row["logo"]).'" alt="John Doe" class="rounded-circle" style="width:150px; height:150px">
-  							</div>
-  							<div class="col-8 myflex-content">
-    							<p>'.$row["name"].'</p>
-    							<p>'.$row["industry"].'</p>
-    							<p>'.$row["products"].'</p>
-    							<p>'.$row["locations"].'</p>
-  							</div>
-  						</div>
-  						</div>
-  				<div class="col-md-4 myflex-social">
-                		<div class="h2">Social Media Handles</div>
-                	<div class="myflex-social-logo">
-                    	<i class="fa fa-instagram fa-2x"></i>
-                    	<i class="fa fa-twitter fa-2x"></i>
-                    	<i class="fa fa-facebook fa-2x"></i>
-                    	<i class="fa fa-google-plus fa-2x"></i>
+                    	<i class="fab fa-facebook" style="font-size:40px;color:#3b5998"></i>
+                    	<i class="fab fa-twitter" style="font-size:40px;color:rgb(29, 161, 242);"></i>
+                    	<i class="fab fa-google-plus" style="font-size:40px;color:rgb(214, 72, 54);"></i>
+                    	<i class="fab fa-instagram" style="font-size:40px;color:black"></i>
                 	</div>
             	</div>
         	</div>	
-
+                
    						';
+                   
    				}
    			}
    		?>
