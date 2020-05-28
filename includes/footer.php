@@ -3,7 +3,7 @@
         <div class="col-sm-2">
             <div style="background-color:white">Logo</div>
             <br>
-            <p><a href="#">About Us</a></p>
+            <p><a href="aboutus.php">About Us</a></p>
             <p><a href="#">Partners</a></p>
             <p><a href="#">Clientele</a></p>
             <p><a href="#">Testimonials</a></p>
@@ -35,20 +35,21 @@
             <p><a href="#">Mumbai</a></p>
             <p><a href="#">Kolkata</a></p>
             <p><a href="#">Pune</a></p>
-            <p><a href="#">Bengluru</a></p>
+            <p><a href="#">Bengaluru</a></p>
             <p><a href="#">Chennai</a></p>
             <p><a href="#">Ahemdabad</a></p>
         </div>
         <div class="col-sm-4">
             <p class="header">Connect with us</p>
-            <p><a href="#">Instagram </a></p>
-            <p><a href="#">Facebook </a></p>
-            <p><a href="#">Whatsapp </a></p>
+            <p><a href="#"><i class='fab fa-instagram' style='font-size:24px;color:white'></i>&nbspInstagram </a></p>
+            <p><a href="#"><i class='fab fa-facebook' style='font-size:24px;color:white'></i>&nbspFacebook </a></p>
+            <p><a href="#"><i class='fab fa-whatsapp' style='font-size:24px;color:white'></i>&nbspWhatsapp </a></p>
+            <p><a href="#"><i class='fab fa-linkedin' style='font-size:24px;color:white'></i>&nbspLinkedIn</a></p>
         </div>
       </div>
 <hr style="border-top: 1px solid white;">
        <div class="conditions">
-           <p><a href="#">Terms & Conditions </a>|
+           <p><a href="terms.php">Terms & Conditions </a>|
               <a href="#"> Privacy Policy </a>|
               <a href="#"> Branding Guidelines </a>|
               <a href="#"> Partner With Us </a>|
