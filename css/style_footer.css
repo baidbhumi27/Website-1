@@ -1,0 +1,22 @@
+/*----FOOTER STYLED-----*/
+    .conditions p a{
+        color: grey;
+        text-decoration: none;
+        margin: 5px;
+    }
+    .footer .row div p a{
+        color: grey;
+        font-size: 15px;
+    }
+    .footer .row div p{
+        line-height: 15px;
+    }
+    .footer .row div{
+        padding: 15px;
+    }
+    .footer {
+        padding: 20px;
+        text-align: center;
+        background: black;
+        color: white;
+    }
