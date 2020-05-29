@@ -1,6 +1,7 @@
 <?php
     require("includes/header.php");
 ?>
+<title>Partner</title>
   <link type="text/css" rel="stylesheet" href="css/style_navbar.css">
   <link type="text/css" rel="stylesheet" href="css/style_modal.css">
   <link type="text/css" rel="stylesheet" href="css/style_partner.css">

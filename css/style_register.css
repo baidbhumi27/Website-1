@@ -1,0 +1,59 @@
+ * {
+    font-family: 'Roboto', sans-serif;
+}
+ 
+.container{
+	padding-bottom: 2rem;
+}
+.mycontainerfluid{
+  padding-top: 2rem;
+}
+.mainform{
+  border: 1px solid black;
+}
+.main-form{
+  padding-top: 20px;
+}
+.tab-content{
+	margin-bottom: 0px;
+}
+.content-section {
+  background: white ;
+  padding: 10px 20px;
+  border: 1px solid #dddddd;
+  border-radius: 3px;
+  margin-bottom: 20px;  
+}
+.nav-tabs{
+  justify-content: center;
+}
+.product-tabs .nav-tabs .formtabs a:link{
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+.product-tabs .nav-tabs .formtabs a:hover{
+  background-color: #f8049c;
+}
+label, textarea, legend{
+	color: #f8049c;
+}
+
+.heading{
+  background-image: linear-gradient(to right, #ff5f6d , #ffc371);
+  padding: 1rem;
+  margin-top: 0;
+}
+.btn{
+  margin-top: 0.8rem;
+  margin-left: 20%;
+  padding: 1rem;
+  background-color: orange;
+}
+.form-group input,.form-group textarea{
+   background-image: linear-gradient(to right, #ff5f6d , #ffc371);
+}
+.tab-control{
+  display: flex;
+  flex-direction: row;
+}

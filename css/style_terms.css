@@ -1,0 +1,11 @@
+	.display1{
+		padding-left: 13rem;
+	}
+	.container_terms{
+		background-color: #f0f0f0;
+		border-radius: 25px;
+		margin-bottom: 2rem;
+		justify-content: center;
+		text-align: center;
+		padding: 2rem;
+	}

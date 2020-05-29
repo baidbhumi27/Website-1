@@ -1,28 +1,16 @@
-<!DOCTYPE html>
-<html>
-<head>
+<?php
+    require("includes/header.php");
+?>
 	<title>Terms & Conditions</title>
 </head>
 <link rel="stylesheet" type="text/css" href="css/style_navbar.css">
+<link rel="stylesheet" type="text/css" href="css/style_terms.css">
 <link rel="stylesheet" type="text/css" href="css/style_footer.css">
-<style type="text/css">
-	.display1{
-		padding-left: 13rem;
-	}
-	.container_terms{
-		background-color: #f0f0f0;
-		border-radius: 25px;
-		margin-bottom: 2rem;
-		justify-content: center;
-		text-align: center;
-		padding: 2rem;
-	}
-</style>
-<?php
-	require("includes/header.php");
+
+<body>
+    <?php
 	require("includes/navbar.php");
 ?>
-<body>
 	<p><h1 class="display1">Terms & Conditions</h1></p>
 	<br>
 	<div class="container container_terms">

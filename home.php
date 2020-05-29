@@ -3,7 +3,7 @@
     require("includes/header.php");
 
 ?>
-        
+        <title>Home</title>
 <link type="text/css" rel="stylesheet" href="css/style_navbar.css">
 <link type="text/css" rel="stylesheet" href="css/style_modal.css">
 <link type="text/css" rel="stylesheet" href="css/style_home.css">

@@ -1,37 +1,18 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>ABOUT US</title>
-</head>
-<link rel="stylesheet" type="text/css" href="css/style_navbar.css">
-<link rel="stylesheet" type="text/css" href="css/style_footer.css">
 <?php
+    require("includes/header.php");
+?>
+	<title>ABOUT US</title>
+
+<link rel="stylesheet" type="text/css" href="css/style_navbar.css">
+<link rel="stylesheet" type="text/css" href="css/style_aboutus.css">
+<link rel="stylesheet" type="text/css" href="css/style_footer.css">
+
+</head>
+<body>
+    <?php
 	require("includes/header.php");
 	require("includes/navbar.php");
 ?>
-<style type="text/css">
-	.myrow{
-		text-align: center;
-	}
-	.logo{
-		display: inline-block;
-		align-items: center;
-	}
-	.paragraph{
-		background-color: #f0f0f0;
-		/*height: 300px;*/
-	}
-	.row_para{
-		padding-top: 1rem;
-		padding-bottom: 3rem;
-	}
-	.paragraph{
-		border-radius: 1.5rem;
-		padding: 1rem;
-		justify-content: center;
-	}
-</style>
-<body>
 	<p><h2 class="display1"><center>About Us</center></h3></p>
 		<div class="container-fluid myrow">
 		<div class="logo">

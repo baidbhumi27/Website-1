@@ -1,116 +1,19 @@
-
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Company Profile</title>
-</head>
 <?php
 require("includes/header.php");
 ?>
+<title>Company Profile</title>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 <link type="text/css" rel="stylesheet" href="css/style_navbar.css">
+<link type="text/css" rel="stylesheet" href="css/style_company_profile.css">
 <link type="text/css" rel="stylesheet" href="css/style_footer.css">
-<?php
+
+</head>
+
+<body>
+    <?php
 require("includes/navbar.php");
 ?>
-<style type="text/css">
-    body{
-        background-image: linear-gradient(to right, #ff5f6d , #ffc371);
-    }
-    .mycontainer{
-        margin-top: 1rem;
-        background-color: white;
-        border-radius: 1.5rem;
-        height: 2000px;
-        display: flex;
-        flex-direction: column;
-        /*width: 110%;*/
-    }
-    .background{
-        background-color: #f0f0f0;
-        height: 200px;
-        border-radius: 1.5rem;
-        /*margin-top: 100px;*/
-    }
-    .image{
-        height: 200px;
-        width: 100%;
-        margin-top: 100px;
-        justify-content: left;
-        padding-left: 4rem;
-        padding-top: 1.5rem;
-    }
-    .image img{
-        height: 150px;
-        width: 150px;
-        object-fit: cover;
-        display: inline-block;
-        /*width: 200px;*/       
-        /*padding-left: 2rem;*/
-    }
-    .info{
-        width: 100%;
-        /*margin-left: 12rem;*/
-        margin-top: -1rem;
-    }
-    @media (max-width: 767px){
-    .details{
-        text-align: center;
-    }
-    .info{
-        margin-left: 0rem;
-    }
-    .social-media{
-        margin-bottom: 100px;
-    }
-}
-.Carousel{
-    justify-content: center;
-}
-.details{
-    /*padding-top: 1.5rem;*/
-}
-.icons{
-    justify-content: center;
-}
-    .basicinfo{
-        text-align: center;
-        background-color: #f0f0f0;
-        /*padding-left: 1rem;*/
-        margin-left: 0rem;
-        padding-top: 0rem; 
-        border-radius: 1.5rem;
-    }
-    @media (min-width: 768px){
-    .social-media{
-        width: 50%;
-        margin-top: 220px;
-        padding-left: 0rem;
-        padding-top: 1rem;
-        background-color: #f0f0f0;
-        border-radius: 25px;
-        margin-left: 2rem;
-       /*justify-content: center;*/
-    }
-}
-        @media (max-width: 767px){
-    .details{
-        text-align: center;
-    }
-    .info{
-        margin-left: 0rem;
-    }
-    .social-media{
-         background-color: #f0f0f0;
-        margin-top: 400px;
-        border-radius: 25px;
-        /*justify-content: center;*/
-    }
-}
-</style>
-<body>
     <div class="container mycontainer">
         <div class="row background">
             <div class="row image">
@@ -126,9 +29,9 @@ require("includes/navbar.php");
                     <div class="col-md-5 basicinfo">
                         <h4 class="display-5"><center>Contact</center></h4>
                         <div class="icons">
-                            <p><i class='fas fa-phone-alt' style='font-size:24px;color: green'></i>&nbsp&nbspPhone</p>
-                            <p><i class='fas fa-mail-bulk' style='font-size:24px'></i>&nbsp&nbspEmail</p>
-                            <p><i class='fas fa-globe' style='font-size:24px;padding-left: 10px;'></i>&nbsp&nbspWebsite</p>
+                            <p><i class='fas fa-phone-alt' style='font-size:24px;color: green'></i>&nbsp; &nbsp; Phone</p>
+                            <p><i class='fas fa-mail-bulk' style='font-size:24px'></i>&nbsp; &nbsp; Email</p>
+                            <p><i class='fas fa-globe' style='font-size:24px;padding-left: 10px;'></i>&nbsp; &nbsp; Website</p>
                         </div>
                     </div>
                 </div>
@@ -180,8 +83,6 @@ require("includes/navbar.php");
 </div>
 
     </div>
+
 </body>
-<?php
-require("includes/footer.php");
-?>
 </html>

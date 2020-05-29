@@ -1,13 +1,6 @@
-<!DOCTYPE html>
-<html>	
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> 
-<script src="https://code.jquery.com/jquery-2.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+<?php
+    require("includes/header.php");
+?>
     <title>Bootstrap Tab - with Previous & Next button</title>
 
     <!-- Bootstrap -->
@@ -15,119 +8,16 @@
     <link href="css/style.css" rel="stylesheet">
     <!-- Fonts -->
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+<link rel="stylesheet" type="text/css" href="css/style_navbar.css">
+<link rel="stylesheet" type="text/css" href="css/style_register.css">
+<link rel="stylesheet" type="text/css" href="css/style_footer.css">
 </head>
-<style type="text/css">
-  * {
-    font-family: 'Roboto', sans-serif;
-}
-  .ul{
-    text-align: center;
-}
-.nav-link:link{
-    margin-left: 20px;
-    margin-right: 20px;
-    color: black;
-    opacity: 1;
-}
-.navbar-brand{
-    color: black;
-    font-weight: bold;
-}
-.nav-link:hover,.navbar-brand:hover{
-    color: black;
-}
-.sign-in{
-    background-image: linear-gradient(to right, #fdd54f , #f8049c);
-    border-radius: 1rem;
-    font-weight: bold;
-}
-.container{
-	padding-bottom: 2rem;
-}
-.mycontainerfluid{
-  padding-top: 2rem;
-}
-.mainform{
-  border: 1px solid black;
-}
-.main-form{
-  padding-top: 20px;
-}
-.tab-content{
-	margin-bottom: 0px;
-}
-.content-section {
-  background: white ;
-  padding: 10px 20px;
-  border: 1px solid #dddddd;
-  border-radius: 3px;
-  margin-bottom: 20px;  
-}
-.nav-tabs{
-  justify-content: center;
-}
-.product-tabs .nav-tabs .formtabs a:link{
-  text-decoration: none;
-  color: black;
-  font-weight: bold;
-}
-.product-tabs .nav-tabs .formtabs a:hover{
-  background-color: #f8049c;
-}
-label, textarea, legend{
-	color: #f8049c;
-}
-
-.heading{
-  background-image: linear-gradient(to right, #ff5f6d , #ffc371);
-  padding: 1rem;
-  margin-top: 0;
-}
-.btn{
-  margin-top: 0.8rem;
-  margin-left: 20%;
-  padding: 1rem;
-  background-color: orange;
-}
-.form-group input,.form-group textarea{
-   background-image: linear-gradient(to right, #ff5f6d , #ffc371);
-}
-.tab-control{
-  display: flex;
-  flex-direction: row;
-}
-</style>
-<body>
-<!DOCTYPE html>
-<html lang="en">
-
-
 
 <body>
-<nav class="navbar navbar-expand-sm navbar-light bg-light">
-    <div class="container">
-    <a href="" class="navbar-brand">LOGO</a>
-    <button class="navbar-toggler" data-toggle="collapse" data-target="#ids">
-      <span class="navbar-toggler-icon my-toggler"></span>
-    </button>
-    <div class=" collapse navbar-collapse" id="ids">
-    <ul class="navbar-nav ml-auto ul">
-    <li class="nav-item">
-      <a href="#" class="nav-link">Home</a>
-    </li>
-    <li class="nav-item">
-      <a href="#" class="nav-link">Categories</a>
-    </li>
-    <li class="nav-item">
-      <a href="#" class="nav-link">Partner</a>
-    </li> 
-    <li class="nav-item">
-      <a href="#" class="nav-link sign-in">Sign In/Up</a>
-    </li> 
-    </ul>
-    </div>
-    </div>
-</nav>
+<?php
+    require("includes/navbar.php");
+    ?>
 <div class="heading">
   <p><h5 class="display-2"><center>Sign Up</center></h6></p>
 </div>
@@ -226,21 +116,14 @@ label, textarea, legend{
                 </div>
                 <div class="col-md-4"></div>
             </div>
-
+<?php
+    require("includes/footer.php");
+    ?>
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
-    <script type="text/javascript">
-        $('.next-button').click(function(){
-            $('.nav-tabs > .active').next('li').find('a').trigger('click');
-            //trigger the click on the tab same like we click on the tab
-        });
-
-        $('.previous-button').click(function(){
-            $('.nav-tabs > .active').prev('li').find('a').trigger('click');
-            //trigger the click on the tab same like we click on the tab
-        })
-    </script>
+    <script src="includes/js_register.js"></script>
+        
 </body>
 </html>
