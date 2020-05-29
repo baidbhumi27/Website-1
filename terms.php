@@ -6,10 +6,9 @@
 <link rel="stylesheet" type="text/css" href="css/style_navbar.css">
 <link rel="stylesheet" type="text/css" href="css/style_footer.css">
 <style type="text/css">
-	.display1{
-		padding-left: 13rem;
-	}
 	.container_terms{
+		width: 90%;
+		margin-left: 5%;
 		background-color: #f0f0f0;
 		border-radius: 25px;
 		margin-bottom: 2rem;
@@ -23,9 +22,9 @@
 	require("includes/navbar.php");
 ?>
 <body>
-	<p><h1 class="display1">Terms & Conditions</h1></p>
+	<p><h1 class="display1"><center>Terms & Conditions</center></h1></p>
 	<br>
-	<div class="container container_terms">
+	<div class="container_terms">
 		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 	</div>
 </body>
