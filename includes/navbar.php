@@ -1,6 +1,6 @@
-<navbar class="navbar navbar-expand-sm navbar-light bg-light">
-		<div class="container">
-		<a href="" class="navbar-brand">LOGO</a>
+<navbar class="navbar navbar-expand-sm navbar-light bg-col">
+		<div class="container contains">
+		<a href="home.php" class="navbar-brand"><img src="images/logo2.png"></a>
 		<button class="navbar-toggler ml-auto" data-toggle="collapse" data-target="#ids">
 			<span class="navbar-toggler-icon my-toggler"></span>
 		</button>
@@ -37,8 +37,8 @@
 		<li class="nav-item">
 			<a href="partner.php" class="nav-link">Partner</a>
 		</li>	
-		<li class="nav-item">
-			<a  type="button" data-toggle="modal" data-target="#myModal" class="nav-link sign-in">Sign In/Up</a>
+		<li class="nav-item signin">
+			<a  type="button" data-toggle="modal" data-target="#myModal" class="nav-link sign-in">&nbsp;&nbsp;<span><i class="fa fa-sign-in">&nbsp;&nbsp;</i></span>Sign In&nbsp;&nbsp;</a>
 		</li>	
 		</ul>
 		</div>

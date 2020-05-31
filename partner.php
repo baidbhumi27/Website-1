@@ -20,7 +20,8 @@
 <!--    ADD A SUBHEADER   -->
 <div class="subheader">
   <div class="container text-center">
-    <h1>Add a Subheading</h1>      
+    <h1>Add a Subheading
+      </h1>      
   </div>
 </div>
 <!-- FORM AND 2 WELL DIVS    -->
@@ -133,7 +134,7 @@
 ?>
 </div>
 
-        <script src="app.js"></script>
+        <script src="includes/js_partner.js"></script>
 </body>
 </html>
 

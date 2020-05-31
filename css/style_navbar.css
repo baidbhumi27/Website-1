@@ -1,35 +1,48 @@
 /* Navbar CSS	*/
+.bg-col{
+background-color: white;
+    box-shadow: 8px 4px 8px 4px rgba(0,0,0,0.2);
+}
+
 .ul{
 		text-align: center;
     float: right;
 	}
+.navbar-brand img{
+    height: 30px;
+    width: 100px;
+/*    border: 1px solid black;*/
+}
 	.nav-link:link{
 		margin-left: 20px;
 		margin-right: 20px;
-		color: black;
-		opacity: 1;
+		color: #00ff7f !important;
+        font-weight: 1000;
+        font-family: 'Raleway', sans-serif;
+        font-size: 15px;
+        
         
 	}
     .nav-link:hover{
-        background-color: #fdd54f;
-        border-radius: 10px;
+        color: #33b288 !important;
     }
-	.navbar-brand{
-		color: black;
-		font-weight: bold;
-	}
 
-	.nav-link:hover,.navbar-brand:hover{
-		color: black;
+.sign-in{
+		background-color: #255b3f;
+        color: #eee58d !important;
+		border-radius: 25px;
+		font-weight: 1000;
+/*        margin-right: 50px;*/
+        font-family: 'Raleway', sans-serif;
+    font-size: 15px;
+    padding: 5px;
 	}
-	.navbar-toggler-icon{
-		/*border: 1px solid black;*/
-	}
-	.sign-in{
-		background-image: linear-gradient(to right, #fdd54f, #f8049c);
-		border-radius: 1rem;
-		font-weight: bold;
-	}
+.sign-in:hover{
+    color: white !important;
+}
+ul .signin{
+    padding: 3px;
+}
 /*NAVBAR CSS -close----*/
 /*--drop down css--*/
 .dropdown-content {

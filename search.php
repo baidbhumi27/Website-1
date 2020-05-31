@@ -2,10 +2,9 @@
     require("includes/header.php");
 ?>
 <title>Search</title>
-<!--<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">-->
+<link type="text/css" rel="stylesheet" href="css/style_search.css">
 <link type="text/css" rel="stylesheet" href="css/style_navbar.css">
 <link type="text/css" rel="stylesheet" href="css/style_modal.css">
-<link type="text/css" rel="stylesheet" href="css/style_search.css">
 <link type="text/css" rel="stylesheet" href="css/style_footer.css">
 
 </head>
@@ -15,19 +14,22 @@
         require("includes/navbar.php");
         require("includes/modal.php");
 ?>
+<div class="colord">
 	<div class="row mycontainer">
 		<div class="buttons">
-			<button type="button" class="btn btn-default button2" >All</button>
-		    <button class="btn btn-default dropdown-toggle button2" type="button" id="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <button type="button" class="btn btn-default button2" ><span><i class="fas fa-check"></i></span>All</button>
+		    <button class="btn btn-default dropdown-toggle button2" type="button" id="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span><i class="fas fa-map-marker-alt">&nbsp;</i></span>
     		Location
   			</button>
-		    <button type="button" class="btn btn-default button2">Industry</button>
+            <button class="btn btn-default dropdown-toggle button2" type="button" id="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span><i class="fas fa-industry">&nbsp;</i></span>
+    		Industry
+  			</button>
 		</div>
 		<div class="search">
 		<form>
         <div class="input-group">
-            <input type="text" class="form-control" name="search" placeholder="Search..."><button>
-            <span class="input-group-text"><i class='fas fa-search'></i></span></button>
+            <input type="text" class="form-control" name="search" placeholder="What are you looking for?">
+            <button>Search</button>
         </div>
     </form>
 		</div>
@@ -38,6 +40,7 @@
 		    <button type="button" class="btn btn-default button3">Service</button>
 		</div>	
 	</div>
+</div>        
 	<br>
 	<br>
 
